@@ -1,54 +1,71 @@
-# Secure Media Library App
+# Getting Started with Vite React App
 
-A secure media library application with role-based access control and file expiry functionality.
+This project was bootstrapped with [Vite React App](https://github.com/facebook/vite-react-app).
 
-## Features
 
-- User authentication with JWT
-- Role-based access control (viewer, uploader, admin)
-- Media file upload with expiry time
-- Automatic file access revocation after expiry
-- Admin dashboard for managing expired files
-- Responsive UI with React Bootstrap
+## Available Scripts
 
-## Technologies
+## => Set `.env` and `database(mysql)`
 
-- Backend: Laravel 9, PHP 8, MySQL
-- Frontend: React 18, React Router 6, React Bootstrap
-- Authentication: JWT (JSON Web Tokens)
+# Run the command in both project
+ ### React : `npm install`
 
-## Installation
+ ### Laravel : `composer install & composer update`
 
-### Backend
+In the project directory, you can run:
+### Start Laravel : `php artisan serve`
+### Start React : `npm run dev`
 
-1. Clone the repository
-2. Navigate to the backend directory: `cd backend`
-3. Copy `.env.example` to `.env` and configure your database settings
-4. Install dependencies: `composer install`
-5. Generate application key: `php artisan key:generate`
-6. Run migrations: `php artisan migrate`
-7. Start the development server: `php artisan serve`
 
-### Frontend
+Runs the app in the development mode.\
+Open [http://localhost:5173](http://localhost:5173) to view it in your browser.
 
-1. Navigate to the frontend directory: `cd frontend`
-2. Install dependencies: `npm install`
-3. Start the development server: `npm start`
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-## API Endpoints
+### `npm test`
 
-- POST `/api/auth/register` - User registration
-- POST `/api/auth/login` - User login
-- GET `/api/auth/me` - Get current user info
-- POST `/api/auth/logout` - User logout
-- GET `/api/media` - List active media files
-- POST `/api/media` - Upload new media (uploader/admin only)
-- GET `/api/media/{id}` - Get media file
-- DELETE `/api/media/{id}` - Delete media file (admin only)
-- GET `/api/media/expired` - List expired media files (admin only)
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## Roles
+### `npm run build`
 
-- **Viewer**: Can view active media files
-- **Uploader**: Can upload new media files and view active files
-- **Admin**: Can upload, view, delete files, and manage expired files
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+ 
+## Learn More
+
+You can learn more in the [Vite React App documentation](https://facebook.github.io/vite-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/vite-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/vite-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/vite-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/vite-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/vite-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/vite-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/vite-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/vite-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
