@@ -21,8 +21,9 @@ ___
 ### Step 2 => Run the command `composer install`
 ### Step 3 => Create Db in Mysql `media_library` (from .env)
 ### Step 4 => Run the command `php artisan migrate`
+> **Note:** Seeder files are not created because user registration functionality is already implemented.
 ### Step 5 => Run the command `php artisan storage:link`
-### Step 5 => Run the project `php artisan serve`
+### Step 6 => Run the project `php artisan serve`
 
 ---
 ## B. Frontend Setup(React) :
