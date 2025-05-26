@@ -2,19 +2,34 @@
 
 This project was bootstrapped with [Vite React App](https://github.com/facebook/vite-react-app).
 
+## Tech Stack & Versions
+#### Laravel : 12.x
+#### PHP : 8.2
+#### Node : v21.6.2
+#### React : 19.1.0
+#### Mysql : 8.x
+___
 
-## Available Scripts
+## Project Setup Steps :
+###  Clone Repo : `git clone https://github.com/abhisheksolanki1111/media_library.git`
 
-## => Set `.env` and `database(mysql)`
+---
 
-# Run the command in both project
- ### React : `npm install`
+## A. Backend Setup(Laravel) :
 
- ### Laravel : `composer install & composer update`
+### Step 1 => Copy `.env.example`(from backend folder) & Paste in `.env`
+### Step 2 => Run the command `composer install`
+### Step 3 => Create Db in Mysql `media_library` (from .env)
+### Step 4 => Run the command `php artisan migrate`
+### Step 5 => Run the command `php artisan storage:link`
+### Step 5 => Run the project `php artisan serve`
 
-In the project directory, you can run:
-### Start Laravel : `php artisan serve`
-### Start React : `npm run dev`
+---
+## B. Frontend Setup(React) :
+
+### Step 1 => Run the command `npm install`
+### Step 2 => Copy `.env.example`(from frontend folder) & Paste in `.env`
+### Step 3 => Run the project `npm run dev`
 
 
 Runs the app in the development mode.\
@@ -23,10 +38,6 @@ Open [http://localhost:5173](http://localhost:5173) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
